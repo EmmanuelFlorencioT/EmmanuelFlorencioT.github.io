@@ -22,6 +22,10 @@ body {
     color: rgb(24, 26, 30);
 }
 
+ul {
+    padding-left: 15px;
+}
+
 /* Left Formatting */
 .left-element {
     width: 80%;
@@ -90,7 +94,8 @@ h2 {
 }
 
 .period {
-    margin: 5px 0 0 0;
+    margin: 2px 0 0 0;
+    color: grey;
 }
 
 @media screen and (max-width: 760px) {
