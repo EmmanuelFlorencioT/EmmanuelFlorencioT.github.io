@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Emmanuel Florencio Trujillo</title>
+    <title>Emmanuel Florencio</title>
     
     <script src="https://kit.fontawesome.com/89e0a91ac3.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
@@ -17,65 +17,61 @@
         <div class="row">
             <div id="whte-container" class="col-lg-8 order-lg-last">
                 <div id="content">
-                    <h1 class="mb-4">EMMANUEL FLORENCIO TRUJILLO</h1>
-                    
-                    <h2>PERSONAL PROFILE</h2>
-                    <hr class="right-hr">
-                    <p>I am a dedicated computer science student with a passion for technology
-                        and a strong commitment to continuous learning and improvement.
-                        Adaptable to challenging situations, I excel both in collaborative team
-                        environments and when working independently.</p>
-                    
-                    <h2>PROFESSIONAL EXPERIENCE</h2>
+                    <h1 class="mb-2">EMMANUEL FLORENCIO</h1>
+                    <h4>Software Engineer</h4>
+
+                    <h2>EXPERIENCE</h2>
                     <hr class="right-hr">
 
-                    <h4 class="achievement mt-3">IT Enabling Intern | BMW Group</h4>
-                    <h5 class="period">July 2023 - Present</h5>
-                    <p>
-                        <ul>
-                            <li>Actively participated in steering team activities for the development of an IT Hub.</li>
-                            <li>Coordinated with suppliers to align team member assignments, ensuring smooth
-                                project execution.</li>
-                            <li>Developed a PowerApp to provide real-time visualization of project progress,
-                                enhancing overall project management.</li>
-                            <li>Automated recurrent processes within the project, streamlining workflow and
-                                increasing efficiency.</li>
-                        </ul>
-                    </p>
+                    <h4 class="achievement mt-3">Full Stack Developer | BitFX for BMW Group</h4>
+                    <h5 class="period">August 2024 - Present | Remote</h5>
+                    <p class="period mb-2">Mobility tool to manage fleet cars</p>
+                    <ul>
+                        <li><strong>Led the migration of the user interface from Vue 2 to Vue 3</strong>, adopting the Composition API and restructuring components for scalability and maintainability.</li>
+                        <li><strong>Led the internationalization of Vue 2 and Vue 3 applications</strong>, implementing locale switching and translating the majority of the UI across English, Spanish, and German.</li>
+                        <li>Designed a plugin-based authentication strategy system in Nuxt, enabling <strong>runtime selection of multiple authentication flows</strong>.</li>
+                        <li><strong>Designed and implemented a badge-based authentication flow for kiosk devices</strong>, orchestrating scanner validation, employee identity lookup, short-lived sessions, token issuance and revocation, and conditional token exchange through a custom Quarkus <code>IdentityProvider</code>.</li>
+                        <li><strong>Implemented token-exchange caching</strong> for user and M2M authentication flows, avoiding repeated downstream validation and identity lookups on each request and reducing authentication overhead in frontend-to-backend communication.</li>
+                        <li><strong>Reduced admin page load times by 60%</strong> by introducing server-side filtering, input debouncing, and request cancellation, minimizing unnecessary network traffic.</li>
+                        <li>Extended internationalization to backend catalogs by introducing normalized i18n keys across database schemas and APIs, enabling <strong>locale-dependent translations without modifying business logic</strong> and supporting regional deployments.</li>
+                        <li>Improved backend performance by normalizing a core booking-related entity and its persistence logic in Java (Quarkus, Hibernate), <strong>reducing time complexity from O(n^3) to O(n)</strong> for critical save and read operations.</li>
+                        <li>Designed a staging-based domain model at the database level to support pre-production vehicles without VINs, <strong>avoiding invasive refactors</strong> to core entities and <strong>preserving backward compatibility</strong>.</li>
+                        <li><strong>Defined a transactional, API-driven promotion flow</strong> to transition staging vehicles into the core fleet lifecycle once VINs are confirmed, <strong>ensuring data integrity</strong> across related entities.</li>
+                        <li>Contributed SQL migration scripts to move <strong>15,000+ production records</strong> into a restructured schema, enabling successful deployments across multiple countries (Mexico, Brazil, Hungary, England, Switzerland).</li>
+                    </ul>
 
-                    <h2>EDUCATIONAL HISTORY</h2>
+                    <h4 class="achievement mt-4">IT Enabling Intern | BMW Group</h4>
+                    <h5 class="period">July 2023 - July 2024 | San Luis Potosí, MX</h5>
+                    <p class="period mb-2">IT Hub &amp; Mobility tool</p>
+                    <ul>
+                        <li><strong>Created 15+ reusable components using Vue 3 &amp; Vuetify 3</strong> with clear documentation to ensure ease of use, responsiveness, and alignment with the application's design system.</li>
+                        <li><strong>Defined KPIs</strong> and created a PowerBI dashboard to measure performance in the recruiting process for an IT Hub to support other plants within the BMW Group, <strong>increasing screening accuracy by 40%</strong>.</li>
+                        <li><strong>Designed and deployed an automation flow executed a total of 250+ times</strong>, streamlining communications and table updates, reducing manual effort, minimizing errors, and significantly boosting operational efficiency.</li>
+                    </ul>
+
+                    <h2>PERSONAL PROJECTS</h2>
                     <hr class="right-hr">
-                    
-                    <h4 class="achievement mt-3">Finalist at TalentLand's Hackathon</h4>
-                    <h5 class="period">April 2023</h5>
-                    <p>
-                        My team and I competed against the best 17 teams in the country, developing an
-                        application using Flutter and Firebase in 3 challenging days that could fulfill Salud Digna's
-                        requirements. Reaching the final stage at our first hackathon.
-                    </p>
-                    
-                    <h4 class="achievement">App Development with Flutter and Tensorflow</h4>
-                    <h5 class="period">July 2023 - Present</h5>
-                    <p>
-                        <ul>
-                            <li>Colaborating with a team of developers to create a Flutter-based application.</li>
-                            <li>Successfully balanced the dataset to enhance the accuracy of the proposed model.</li>
-                            <li>Proposed a convolutional neural network architecture that would be both precise and lightweight.</li>
-                            <li>Model optimizatin using Tensorflow Lite.</li>
-                            <li>Embedded a Tensorflow model within the app to classify pigmented lesions, utilizing
-                                the HAM10000 dataset.</li>
-                        </ul>
-                    </p>
 
-                    <h4 class="achievement">Generative Adversarial Networks applied to Cryptography</h4>
-                    <h5 class="period">March 2023 - July 2023</h5>
-                    <p>Investigated how effectively Neural Networks can learn to encrypt and decrypt messages
-                        to prevent an eavesdropper from deciphering exchanged information, using Python and
-                        Tensorflow 2 for the model implementation.</p>
-                    
-                    <h4 class="achievement">Scholarship for Academic Excelence</h4>
-                    <h5 class="period">July 2022</h5>
-                    <p>After I changed my career to Engineering in Intelligent Systems, I worked hard to keep up with my good practices and my good GPA, earning a scholarship for the next two semesters in my university.</p>
+                    <h4 class="achievement mt-3"><a href="https://www.youtube.com/watch?v=dvdaPz2LGbE">Skin Cancer Classification Application</a></h4>
+                    <h5 class="period">July 2023 - May 2024</h5>
+                    <ul>
+                        <li><strong>Spearheaded a team of developers</strong> to create a Flutter-based application with an embedded machine learning model to classify pigmented lesions.</li>
+                        <li><strong>Designed an efficient and precise Convolutional Neural Network (CNN)</strong> by combining concepts like Inverted Residual Blocks and Depthwise Separable Convolutional layers.</li>
+                        <li><strong>Improved the quality of the data</strong> used by performing data augmentation and undersampling techniques to balance the dataset.</li>
+                    </ul>
+
+                    <h2>EDUCATION</h2>
+                    <hr class="right-hr">
+
+                    <h4 class="achievement mt-3"><a href="https://www.ingenieria.uaslp.mx/CienciasComputacion/Paginas/Oferta-Academica/4453#gsc.tab=0">Universidad Autónoma de San Luis Potosí</a></h4>
+                    <h5 class="period">2020 - 2024 | San Luis Potosí, MX</h5>
+                    <p>Intelligent Systems Engineering</p>
+                    <p>Graduated with honors, earning a <strong>GPA of 96.6/100</strong>.</p>
+                    <p><strong>Relevant Coursework:</strong> Data Structures &amp; Algorithms, Web Development, Artificial Intelligence, Mobile Development</p>
+
+                    <h4 class="achievement mt-4">Universidad Autónoma de San Luis Potosí</h4>
+                    <h5 class="period">2019 - 2020 | San Luis Potosí, MX</h5>
+                    <p>Mechanical Electrical Engineering</p>
                     
                 </div>
             </div>
@@ -87,60 +83,25 @@
                     <table>
                         <tr>
                             <td><i class="fa-solid fa-phone fa-2xl"></i></td>
-                            <td>+52 (444) 134-08-70</td>
+                            <td><a href="tel:+524441340870">(+52) 444 134 0870</a></td>
                         </tr>
                         <tr>
                             <td><i class="fa-solid fa-envelope fa-2xl"></i></td>
                             <td>
-                                <p class="tab-line"><a href="mailto:emm.ftr2@gmail.com">emm.ftr2@gmail.com</a></p>
-                                <p class="tab-line"><a href="mailto:a309506@alumnos.uaslp.mx">a309506@alumnos.uaslp.mx</a></p>
+                                <p class="tab-line"><a href="mailto:emmanuel.florencio.dev@gmail.com">emmanuel.florencio.dev@gmail.com</a></p>
                             </td>
                         </tr>
-                        <tr>
-                            <td><i class="fa-brands fa-github fa-2xl"></i></td>
-                            <td><a href="https://github.com/EmmanuelFlorencioT">EmmanuelFlorencioT 
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
-                            </tr>
                             <tr>
                                 <td><i class="fa-brands fa-linkedin-in fa-2xl"></i></td>
-                                <td><a href="https://www.linkedin.com/in/emmanuel-florencio-dev/">EmmanuelFlorencioT 
+                                <td><a href="https://www.linkedin.com/in/emmanuel-florencio-dev/">Emmanuel Florencio 
                                 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
                         </tr>
                         <tr>
                             <td><i class="fa-solid fa-location-dot fa-2xl"></i></td>
-                            <td>
-                                <p class="tab-line">San Luis Potosí, Mexico.</p>
-                            </td>
+                            <td><p class="tab-line">San Luis Potosí, MX</p></td>
                         </tr>
                     </table>
 
-                    <br>
-                    <h3>SKILLS</h3>
-                    <hr class="left-hr">
-                    <ul>
-                        <li>Team Work</li>
-                        <li class="spacing-li-top">Organized</li>
-                        <li class="spacing-li-top">Responsible</li>
-                    </ul>
-
-                    <br>
-                    <h3>EDUCATION</h3>
-                    <hr class="left-hr">
-                    <h4>Universidad Autónoma de San Luis Potosí</h4>
-                    <h4>2019 - Present</h4>
-
-                    <p>Mechanical Electrical Engineering 2019 - 2020</p>
-                    <p>Intelligent Systems Engineering (Computer Science)
-                        2020 - Present</p>
-                    
-                    <br>
-                    <h3>LANGUAGES</h3>
-                    <hr class="left-hr">
-                    <ul>
-                        <li>English (B2 Cambridge Certificate)</li>
-                        <li class="spacing-li-top">French (A2 Level)</li>
-                        <li class="spacing-li-top">Spanish</li>
-                    </ul>
                 </div>
             </div>
         </div>
