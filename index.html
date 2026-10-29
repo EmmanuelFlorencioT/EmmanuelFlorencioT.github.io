@@ -6,6 +6,14 @@
     <meta name="theme-color" content="#e8e7e4">
     <meta name="description" content="Emmanuel Florencio, Software Engineer">
     <title>Emmanuel Florencio | Software Engineer</title>
+    <script>
+        (() => {
+            const savedTheme = localStorage.getItem("theme");
+            const preferredTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+            document.documentElement.dataset.theme = savedTheme || preferredTheme;
+            document.querySelector('meta[name="theme-color"]').content = savedTheme === "dark" || (!savedTheme && preferredTheme === "dark") ? "#0c1925" : "#f5f8fa";
+        })();
+    </script>
     <script src="https://kit.fontawesome.com/89e0a91ac3.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,6 +32,9 @@
                 <a class="nav-link" href="#experience">About me</a>
                 <a class="nav-link" href="#projects">Projects</a>
                 <a class="nav-contact" href="mailto:emmanuel.florencio.dev@gmail.com">Contact me <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch to dark theme">
+                    <i class="fa-solid fa-moon" aria-hidden="true"></i>
+                </button>
             </nav>
         </header>
 
@@ -36,7 +47,6 @@
                         <p><mark>Software Engineer</mark> building thoughtful web experiences, authentication systems, and tools that make complex work simpler.</p>
                     </div>
                     <a class="scroll-link" href="#experience"><span class="scroll-icon"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i></span><span>Explore my work</span></a>
-                    <span class="scribble scribble-stroke" aria-hidden="true"></span>
                 </div>
 
                 <div class="hero-visual">
@@ -149,5 +159,28 @@
             <span class="footer-location">San Luis Potosí, Mexico <span>© 2026 Emmanuel Florencio</span></span>
         </footer>
     </div>
+    <script>
+        const themeToggle = document.querySelector(".theme-toggle");
+
+        function updateThemeToggle() {
+            const isDark = document.documentElement.dataset.theme === "dark";
+            const label = isDark ? "Switch to light theme" : "Switch to dark theme";
+            const icon = themeToggle.querySelector("i");
+
+            icon.classList.toggle("fa-moon", !isDark);
+            icon.classList.toggle("fa-sun", isDark);
+            themeToggle.setAttribute("aria-label", label);
+            themeToggle.title = label;
+            document.querySelector('meta[name="theme-color"]').content = isDark ? "#0c1925" : "#f5f8fa";
+        }
+
+        updateThemeToggle();
+        themeToggle.addEventListener("click", () => {
+            const nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+            document.documentElement.dataset.theme = nextTheme;
+            localStorage.setItem("theme", nextTheme);
+            updateThemeToggle();
+        });
+    </script>
 </body>
 </html>
