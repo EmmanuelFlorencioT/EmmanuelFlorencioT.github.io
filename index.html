@@ -2,112 +2,152 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Emmanuel Florencio</title>
-    
+    <meta name="theme-color" content="#e8e7e4">
+    <meta name="description" content="Emmanuel Florencio, Software Engineer">
+    <title>Emmanuel Florencio | Software Engineer</title>
     <script src="https://kit.fontawesome.com/89e0a91ac3.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
+    <div class="page-shell">
+        <header class="site-header">
+            <a class="brand" href="#home" aria-label="Emmanuel Florencio, home">
+                <span class="brand-mark">E</span>
+                <span>Emmanuel Florencio</span>
+            </a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a class="nav-link active" href="#home">Home</a>
+                <a class="nav-link" href="#experience">About me</a>
+                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-contact" href="mailto:emmanuel.florencio.dev@gmail.com">Contact me <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </nav>
+        </header>
 
-    <div id="container">
-        <div class="row">
-            <div id="whte-container" class="col-lg-8 order-lg-last">
-                <div id="content">
-                    <h1 class="mb-2">EMMANUEL FLORENCIO</h1>
-                    <h4>Software Engineer</h4>
-
-                    <h2>EXPERIENCE</h2>
-                    <hr class="right-hr">
-
-                    <h4 class="achievement mt-3">Full Stack Developer | BitFX for BMW Group</h4>
-                    <h5 class="period">August 2024 - Present | Remote</h5>
-                    <p class="period mb-2">Mobility tool to manage fleet cars</p>
-                    <ul>
-                        <li><strong>Led the migration of the user interface from Vue 2 to Vue 3</strong>, adopting the Composition API and restructuring components for scalability and maintainability.</li>
-                        <li><strong>Led the internationalization of Vue 2 and Vue 3 applications</strong>, implementing locale switching and translating the majority of the UI across English, Spanish, and German.</li>
-                        <li>Designed a plugin-based authentication strategy system in Nuxt, enabling <strong>runtime selection of multiple authentication flows</strong>.</li>
-                        <li><strong>Designed and implemented a badge-based authentication flow for kiosk devices</strong>, orchestrating scanner validation, employee identity lookup, short-lived sessions, token issuance and revocation, and conditional token exchange through a custom Quarkus <code>IdentityProvider</code>.</li>
-                        <li><strong>Implemented token-exchange caching</strong> for user and M2M authentication flows, avoiding repeated downstream validation and identity lookups on each request and reducing authentication overhead in frontend-to-backend communication.</li>
-                        <li><strong>Reduced admin page load times by 60%</strong> by introducing server-side filtering, input debouncing, and request cancellation, minimizing unnecessary network traffic.</li>
-                        <li>Extended internationalization to backend catalogs by introducing normalized i18n keys across database schemas and APIs, enabling <strong>locale-dependent translations without modifying business logic</strong> and supporting regional deployments.</li>
-                        <li>Improved backend performance by normalizing a core booking-related entity and its persistence logic in Java (Quarkus, Hibernate), <strong>reducing time complexity from O(n^3) to O(n)</strong> for critical save and read operations.</li>
-                        <li>Designed a staging-based domain model at the database level to support pre-production vehicles without VINs, <strong>avoiding invasive refactors</strong> to core entities and <strong>preserving backward compatibility</strong>.</li>
-                        <li><strong>Defined a transactional, API-driven promotion flow</strong> to transition staging vehicles into the core fleet lifecycle once VINs are confirmed, <strong>ensuring data integrity</strong> across related entities.</li>
-                        <li>Contributed SQL migration scripts to move <strong>15,000+ production records</strong> into a restructured schema, enabling successful deployments across multiple countries (Mexico, Brazil, Hungary, England, Switzerland).</li>
-                    </ul>
-
-                    <h4 class="achievement mt-4">IT Enabling Intern | BMW Group</h4>
-                    <h5 class="period">July 2023 - July 2024 | San Luis Potosí, MX</h5>
-                    <p class="period mb-2">IT Hub &amp; Mobility tool</p>
-                    <ul>
-                        <li><strong>Created 15+ reusable components using Vue 3 &amp; Vuetify 3</strong> with clear documentation to ensure ease of use, responsiveness, and alignment with the application's design system.</li>
-                        <li><strong>Defined KPIs</strong> and created a PowerBI dashboard to measure performance in the recruiting process for an IT Hub to support other plants within the BMW Group, <strong>increasing screening accuracy by 40%</strong>.</li>
-                        <li><strong>Designed and deployed an automation flow executed a total of 250+ times</strong>, streamlining communications and table updates, reducing manual effort, minimizing errors, and significantly boosting operational efficiency.</li>
-                    </ul>
-
-                    <h2>PERSONAL PROJECTS</h2>
-                    <hr class="right-hr">
-
-                    <h4 class="achievement mt-3"><a href="https://www.youtube.com/watch?v=dvdaPz2LGbE">Skin Cancer Classification Application</a></h4>
-                    <h5 class="period">July 2023 - May 2024</h5>
-                    <ul>
-                        <li><strong>Spearheaded a team of developers</strong> to create a Flutter-based application with an embedded machine learning model to classify pigmented lesions.</li>
-                        <li><strong>Designed an efficient and precise Convolutional Neural Network (CNN)</strong> by combining concepts like Inverted Residual Blocks and Depthwise Separable Convolutional layers.</li>
-                        <li><strong>Improved the quality of the data</strong> used by performing data augmentation and undersampling techniques to balance the dataset.</li>
-                    </ul>
-
-                    <h2>EDUCATION</h2>
-                    <hr class="right-hr">
-
-                    <h4 class="achievement mt-3"><a href="https://www.ingenieria.uaslp.mx/CienciasComputacion/Paginas/Oferta-Academica/4453#gsc.tab=0">Universidad Autónoma de San Luis Potosí</a></h4>
-                    <h5 class="period">2020 - 2024 | San Luis Potosí, MX</h5>
-                    <p>Intelligent Systems Engineering</p>
-                    <p>Graduated with honors, earning a <strong>GPA of 96.6/100</strong>.</p>
-                    <p><strong>Relevant Coursework:</strong> Data Structures &amp; Algorithms, Web Development, Artificial Intelligence, Mobile Development</p>
-
-                    <h4 class="achievement mt-4">Universidad Autónoma de San Luis Potosí</h4>
-                    <h5 class="period">2019 - 2020 | San Luis Potosí, MX</h5>
-                    <p>Mechanical Electrical Engineering</p>
-                    
+        <main>
+            <section class="hero" id="home" aria-labelledby="hero-title">
+                <div class="hero-copy">
+                    <p class="eyebrow"><span class="status-dot"></span> Software Engineer <span class="eyebrow-divider">/</span> San Luis Potosí, MX</p>
+                    <h1 id="hero-title">Emmanuel<br><span>Florencio.</span></h1>
+                    <div class="intro-copy">
+                        <p><mark>Software Engineer</mark> building thoughtful web experiences, authentication systems, and tools that make complex work simpler.</p>
+                    </div>
+                    <a class="scroll-link" href="#experience"><span class="scroll-icon"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i></span><span>Explore my work</span></a>
+                    <span class="scribble scribble-stroke" aria-hidden="true"></span>
                 </div>
-            </div>
-            <div id="blck-container" class="col-lg-4 order-lg-first">
-                <img id="profile-pic" class="left-element" src="profile-pic.png" alt="Profile-Picture">
-                <div class="left-element">
-                    <h3>CONTACT</h3>
-                    <hr class="left-hr">
-                    <table>
-                        <tr>
-                            <td><i class="fa-solid fa-phone fa-2xl"></i></td>
-                            <td><a href="tel:+524441340870">(+52) 444 134 0870</a></td>
-                        </tr>
-                        <tr>
-                            <td><i class="fa-solid fa-envelope fa-2xl"></i></td>
-                            <td>
-                                <p class="tab-line"><a href="mailto:emmanuel.florencio.dev@gmail.com">emmanuel.florencio.dev@gmail.com</a></p>
-                            </td>
-                        </tr>
-                            <tr>
-                                <td><i class="fa-brands fa-linkedin-in fa-2xl"></i></td>
-                                <td><a href="https://www.linkedin.com/in/emmanuel-florencio-dev/">Emmanuel Florencio 
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
-                        </tr>
-                        <tr>
-                            <td><i class="fa-solid fa-location-dot fa-2xl"></i></td>
-                            <td><p class="tab-line">San Luis Potosí, MX</p></td>
-                        </tr>
-                    </table>
 
+                <div class="hero-visual">
+                    <span class="portrait-frame" aria-hidden="true"></span>
+                    <img class="profile-photo" src="profile-pic.png" alt="Portrait of Emmanuel Florencio">
                 </div>
+
+                <div class="social-links" aria-label="Social and project links">
+                    <a href="https://www.linkedin.com/in/emmanuel-florencio-dev/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+                    <a href="https://github.com/EmmanuelFlorencioT" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+                    <a href="https://www.youtube.com/watch?v=dvdaPz2LGbE" target="_blank" rel="noopener noreferrer" aria-label="Skin Cancer Classification Application video"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+                </div>
+                <span class="hero-index" aria-hidden="true">01 — 04</span>
+            </section>
+
+            <section class="resume-section experience-section" id="experience" aria-labelledby="experience-title">
+                <div class="section-heading">
+                    <p class="eyebrow">A little about what I do</p>
+                    <h2 id="experience-title">Experience<span class="accent-dot">.</span></h2>
+                    <span class="section-number">01</span>
+                </div>
+
+                <article class="resume-entry">
+                    <div class="entry-meta"><span>Aug 2024 — Present</span><span>Remote</span></div>
+                    <div class="entry-body">
+                        <h3>Software Engineer <span class="entry-company">/ BitFX for BMW Group</span></h3>
+                        <p class="entry-context">Mobility tool to manage fleet cars</p>
+                        <ul class="achievement-list">
+                            <li><strong>Led the migration of the user interface from Vue 2 to Vue 3</strong>, adopting the Composition API and restructuring components for scalability and maintainability.</li>
+                            <li><strong>Led the internationalization of Vue 2 and Vue 3 applications</strong>, implementing locale switching and translating the majority of the UI across English, Spanish, and German.</li>
+                            <li>Designed a plugin-based authentication strategy system in Nuxt, enabling <strong>runtime selection of multiple authentication flows</strong>.</li>
+                            <li><strong>Designed and implemented a badge-based authentication flow for kiosk devices</strong>, orchestrating scanner validation, employee identity lookup, short-lived sessions, token issuance and revocation, and conditional token exchange through a custom Quarkus <code>IdentityProvider</code>.</li>
+                            <li><strong>Implemented token-exchange caching</strong> for user and M2M authentication flows, avoiding repeated downstream validation and identity lookups on each request and reducing authentication overhead in frontend-to-backend communication.</li>
+                            <li><strong>Reduced admin page load times by 60%</strong> by introducing server-side filtering, input debouncing, and request cancellation, minimizing unnecessary network traffic.</li>
+                            <li>Extended internationalization to backend catalogs by introducing normalized i18n keys across database schemas and APIs, enabling <strong>locale-dependent translations without modifying business logic</strong> and supporting regional deployments.</li>
+                            <li>Improved backend performance by normalizing a core booking-related entity and its persistence logic in Java (Quarkus, Hibernate), <strong>reducing time complexity from O(n^3) to O(n)</strong> for critical save and read operations.</li>
+                            <li>Designed a staging-based domain model at the database level to support pre-production vehicles without VINs, <strong>avoiding invasive refactors</strong> to core entities and <strong>preserving backward compatibility</strong>.</li>
+                            <li><strong>Defined a transactional, API-driven promotion flow</strong> to transition staging vehicles into the core fleet lifecycle once VINs are confirmed, <strong>ensuring data integrity</strong> across related entities.</li>
+                            <li>Contributed SQL migration scripts to move <strong>15,000+ production records</strong> into a restructured schema, enabling successful deployments across multiple countries (Mexico, Brazil, Hungary, England, Switzerland).</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="resume-entry">
+                    <div class="entry-meta"><span>Jul 2023 — Jul 2024</span><span>San Luis Potosí, MX</span></div>
+                    <div class="entry-body">
+                        <h3>IT Enabling Intern <span class="entry-company">/ BMW Group</span></h3>
+                        <p class="entry-context">IT Hub &amp; Mobility tool</p>
+                        <ul class="achievement-list">
+                            <li><strong>Created 15+ reusable components using Vue 3 &amp; Vuetify 3</strong> with clear documentation to ensure ease of use, responsiveness, and alignment with the application's design system.</li>
+                            <li><strong>Defined KPIs</strong> and created a PowerBI dashboard to measure performance in the recruiting process for an IT Hub to support other plants within the BMW Group, <strong>increasing screening accuracy by 40%</strong>.</li>
+                            <li><strong>Designed and deployed an automation flow executed a total of 250+ times</strong>, streamlining communications and table updates, reducing manual effort, minimizing errors, and significantly boosting operational efficiency.</li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+
+            <section class="resume-section project-section" id="projects" aria-labelledby="projects-title">
+                <div class="section-heading">
+                    <p class="eyebrow">Selected work</p>
+                    <h2 id="projects-title">Personal project<span class="accent-dot">.</span></h2>
+                    <span class="section-number">02</span>
+                </div>
+                <article class="project-entry">
+                    <div class="project-date">Jul 2023 — May 2024</div>
+                    <div>
+                        <h3><a href="https://www.youtube.com/watch?v=dvdaPz2LGbE" target="_blank" rel="noopener noreferrer">Skin Cancer Classification Application <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></h3>
+                        <ul class="achievement-list">
+                            <li><strong>Spearheaded a team of developers</strong> to create a Flutter-based application with an embedded machine learning model to classify pigmented lesions.</li>
+                            <li><strong>Designed an efficient and precise Convolutional Neural Network (CNN)</strong> by combining concepts like Inverted Residual Blocks and Depthwise Separable Convolutional layers.</li>
+                            <li><strong>Improved the quality of the data</strong> used by performing data augmentation and undersampling techniques to balance the dataset.</li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+
+            <section class="resume-section education-section" id="education" aria-labelledby="education-title">
+                <div class="section-heading">
+                    <p class="eyebrow">The foundations</p>
+                    <h2 id="education-title">Education<span class="accent-dot">.</span></h2>
+                    <span class="section-number">03</span>
+                </div>
+                <div class="education-grid">
+                    <article class="education-entry">
+                        <p class="entry-context">2020 — 2024</p>
+                        <h3><a href="https://www.ingenieria.uaslp.mx/CienciasComputacion/Paginas/Oferta-Academica/4453#gsc.tab=0" target="_blank" rel="noopener noreferrer">Universidad Autónoma de San Luis Potosí <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></h3>
+                        <p>Intelligent Systems Engineering</p>
+                        <p>Graduated with honors, earning a <strong>GPA of 96.6/100</strong>.</p>
+                        <p><strong>Relevant coursework:</strong> Data Structures &amp; Algorithms, Web Development, Artificial Intelligence, Mobile Development</p>
+                    </article>
+                    <article class="education-entry">
+                        <p class="entry-context">2019 — 2020</p>
+                        <h3>Universidad Autónoma de San Luis Potosí</h3>
+                        <p>Mechanical Electrical Engineering</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer" id="contact">
+            <div>
+                <p class="eyebrow">Have a project in mind?</p>
+                <h2>Let's make it work<span class="accent-dot">.</span></h2>
             </div>
-        </div>
-        
-        
+            <div class="footer-contact">
+                <a class="footer-email" href="mailto:emmanuel.florencio.dev@gmail.com">emmanuel.florencio.dev@gmail.com <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                <a href="tel:+524441340870">(+52) 444 134 0870</a>
+                <a href="https://www.linkedin.com/in/emmanuel-florencio-dev/" target="_blank" rel="noopener noreferrer">LinkedIn <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </div>
+            <span class="footer-location">San Luis Potosí, Mexico <span>© 2026 Emmanuel Florencio</span></span>
+        </footer>
     </div>
-    
 </body>
 </html>
